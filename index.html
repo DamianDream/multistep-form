@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Step JS From </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <section name="form-section">
+    <form class="msf" action="#" data-multi-step-form>
+
+      <!-- FORM HEADER -->
+      <div class="msf__header">
+        <h5 class="msf__title">Multi Step Form</h5>
+        <div class="msf__progress">
+
+        </div>
+      </div>
+      <!-- FORM HEADER END -->
+
+      <!-- FORM STEPS -->
+      <div class="msf__steps">
+
+        <fieldset data-step class="msf__card">
+          <div class="msf__input">
+            <label for="email">Emails<sup>*</sup></label>
+            <input type="email" name="email" id="email" autocomplete="email" required>
+          </div>
+          <div class="msf__input">
+            <label for="password">Password<sup>*</sup></label>
+            <input type="password" name="password" id="password" required>
+          </div>
+        </fieldset>
+        <fieldset data-step class="msf__card">
+          <div class="msf__input">
+            <label for="name">Name<sup>*</sup></label>
+            <input type="text" name="name" id="name" autocomplete="name">
+          </div>
+          <div class="msf__input">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" autocomplete="tel">
+          </div>
+        </fieldset>
+        <fieldset data-step class="msf__card">
+          <div class="msf__input">
+            <label for="text">Text</label>
+            <input type="text" name="text" id="text">
+          </div>
+        </fieldset>
+
+      </div>
+      <!-- FORM STEPS END-->
+
+      <!-- MESSAGE -->
+      <div class="msf__message">
+        <h5>Please fill all the required fields</h5>
+      </div>
+      <!-- MESSAGE END -->
+
+      <!-- CONTROL AREA -->
+      <fieldset class="msf__action-bar">
+
+        <div class="msf__control">
+          <button data-previous class="msf__cta">
+            <img src="arrow-left.svg" alt="arrow icon">
+          </button>
+          <button data-next class="msf__cta">
+            <img src="arrow-right.svg" alt="arrow icon">
+          </button>
+          <button data-submit type="submit" class="msf__cta">Submit</button>
+        </div>
+
+      </fieldset>
+      <!-- CONTROL AREA END-->
+
+    </form>
+  </section>
+
+</body>
+</html>
